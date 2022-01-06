@@ -35,6 +35,8 @@ int main(int argc, char** argv){
   tf2_ros::Buffer buffer(ros::Duration(10));
   tf2_ros::TransformListener tf(buffer);
 
+  ROS_INFO("\n\nStarting move_base...\n\n");
+
   move_base::MoveBase move_base( buffer );
 
   //ros::MultiThreadedSpinner s;
